@@ -1,10 +1,12 @@
-package hk.stormy;
+package hk.stormy.weather;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class CurrentWeather {
+import hk.stormy.R;
+
+public class Current {
     private String mIcon;
     private long mTime;
     private double mTemperature;
