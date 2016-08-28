@@ -1,6 +1,7 @@
-package hk.stormy;
+package hk.stormy.ui;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -21,6 +22,8 @@ import java.io.IOException;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
+import hk.stormy.R;
 import hk.stormy.weather.Current;
 import hk.stormy.weather.Day;
 import hk.stormy.weather.Forecast;
@@ -242,6 +245,12 @@ public class MainActivity extends AppCompatActivity {
     private void alertUserAboutError(){
         AlertDialogFragment dialog = new AlertDialogFragment();
         dialog.show(getFragmentManager(),"error_dialog");
+    }
+
+    @OnClick(R.id.dailyButton)
+    public void startDaiyActivity(View view){
+        Intent intent = new Intent (this, DailyForecastActivity.class);
+        startActivity(intent);
     }
 
 }

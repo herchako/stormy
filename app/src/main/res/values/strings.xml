@@ -5,4 +5,16 @@
     <string name="error_message">There was an error please try again</string>
     <string name="error_ok_button_text">Ok</string>
     <string name="network_unavailable_message">Network is Unavailable</string>
+    <string name="activity_main_string">--</string>
+    <string name="main">Main</string>
+    <string name="dots_string">...</string>
+    <string name="argentina_lomas_de_zamora_bs_as">ARGENTINA, Lomas de Zamora, BS AS</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="humedad">HUMEDAD</string>
+    <string name="values_of_strings">--</string>
+    <string name="lluvia">LLUVIA?</string>
+    <string name="dashes">--</string>
+    <string name="stormy">Stormy</string>
+    <string name="desc">Desc</string>
+    <string name="no_daily_forecast_data">No hay informacion que mostrar</string>
 </resources>

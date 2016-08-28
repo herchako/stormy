@@ -10,14 +10,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="hk.stormy.MainActivity"
+    tools:context=".ui.MainActivity"
     tools:showIn="@layout/activity_main"
     android:background="#fffc970b">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="--"
+        android:text="@string/activity_main_string"
         android:id="@+id/temperatureLabel"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
@@ -32,12 +32,13 @@
         android:layout_toRightOf="@+id/temperatureLabel"
         android:layout_toEndOf="@+id/temperatureLabel"
         android:src="@drawable/degree"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/main"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="..."
+        android:text="@string/dots_string"
         android:id="@+id/timeLabel"
         android:layout_above="@+id/degreeImageView"
         android:layout_centerHorizontal="true"
@@ -47,7 +48,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ARGENTINA, Lomas de Zamora, BS AS"
+        android:text="@string/argentina_lomas_de_zamora_bs_as"
         android:id="@+id/locationLabel"
         android:layout_above="@+id/timeLabel"
         android:layout_centerHorizontal="true"
@@ -64,7 +65,8 @@
         android:src="@drawable/cloudy_night"
         android:layout_alignTop="@+id/locationLabel"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/descripcion"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -74,7 +76,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:weightSum="100"
-        android:id="@+id/linearLayout">
+        android:id="@+id/linearLayout"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:orientation="vertical"
@@ -85,15 +88,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="HUMEDAD"
+                android:text="@string/humedad"
                 android:id="@+id/humidityLabel"
                 android:textColor="#80ffffff"
                 android:gravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="--"
+                android:layout_height="0dp"
+                android:text="@string/values_of_strings"
                 android:id="@+id/humidityValue"
                 android:textColor="@android:color/white"
                 android:layout_weight="50"
@@ -110,7 +113,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="LLUVIA?"
+                android:text="@string/lluvia"
                 android:id="@+id/precipLabel"
                 android:textColor="#80ffffff"
                 android:gravity="center_horizontal"/>
@@ -118,7 +121,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="--"
+                android:text="@string/dashes"
                 android:id="@+id/precipValue"
                 android:textColor="#ffffff"
                 android:textSize="24sp"
@@ -129,13 +132,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Stormy"
+        android:text="@string/stormy"
         android:id="@+id/summaryLabel"
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:textColor="#ffffff"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:gravity="center_horizontal"/>
 
     <ImageView
@@ -144,7 +147,8 @@
         android:id="@+id/refreshImageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/refresh"/>
+        android:src="@drawable/refresh"
+        android:contentDescription="@string/desc"/>
 
     <ProgressBar
         android:layout_width="wrap_content"

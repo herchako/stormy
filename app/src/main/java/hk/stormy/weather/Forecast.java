@@ -1,6 +1,6 @@
 package hk.stormy.weather;
 
-public class Forecast {
+public class  Forecast {
     private Current mCurrent;
     private Hour[] mHourlyForecast;
     private Day[] mDailyForecast;
