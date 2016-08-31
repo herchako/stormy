@@ -37,6 +37,8 @@ import okhttp3.Response;
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = MainActivity.class.getSimpleName();
+    public static final String DAILY_FORECAST = "DAILY_FORECAST";
+
 
     private Forecast mForecast;
 
@@ -210,8 +212,6 @@ public class MainActivity extends AppCompatActivity {
         return hours;
     }
 
-
-
     private Current getCurrentDetails(String jsonData) throws JSONException{
         JSONObject forecast = new JSONObject(jsonData);
         String timezone = forecast.getString("timezone");
@@ -250,6 +250,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.dailyButton)
     public void startDaiyActivity(View view){
         Intent intent = new Intent (this, DailyForecastActivity.class);
+        intent.putExtra(DAILY_FORECAST,mForecast.getDailyForecast());
         startActivity(intent);
     }
 
