@@ -37,7 +37,7 @@ public class Day implements Parcelable {
     }
 
     public void setTemperatureMax(double temperatureMax) {
-        mTemperatureMax = temperatureMax;
+        mTemperatureMax =  Math.round((temperatureMax-32)/(9/5));
     }
 
     public String getIcon() {
