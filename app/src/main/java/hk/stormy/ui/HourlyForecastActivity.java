@@ -16,6 +16,8 @@ import hk.stormy.R;
 import hk.stormy.adapter.HourAdapter;
 import hk.stormy.weather.Hour;
 
+//esta es la prueba de un branch 2
+
 public class HourlyForecastActivity extends Activity {
 
     private Hour[] mHours;

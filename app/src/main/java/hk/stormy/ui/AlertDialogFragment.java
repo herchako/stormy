@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import hk.stormy.R;
 
-//esta es la prueba de un branch 1
+//esta es la prueba de un branch 2
 
 public class AlertDialogFragment extends DialogFragment {
     @Override

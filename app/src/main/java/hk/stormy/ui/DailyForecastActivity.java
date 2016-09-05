@@ -15,6 +15,8 @@ import hk.stormy.R;
 import hk.stormy.adapter.DayAdapter;
 import hk.stormy.weather.Day;
 
+//esta es la prueba de un branch 2
+
 public class DailyForecastActivity extends ListActivity {
     private Day[] mDays;
 

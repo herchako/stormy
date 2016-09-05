@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Forecast mForecast;
 
-    //esta es la prueba de un branch 1
+    //esta es la prueba de un branch 2
 
     @BindView(R.id.timeLabel) TextView mTimeLabel;
     @BindView(R.id.temperatureLabel) TextView mTemperatureLabel;
