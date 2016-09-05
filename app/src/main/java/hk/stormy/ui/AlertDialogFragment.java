@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import hk.stormy.R;
 
+//esta es la prueba de un branch 1
+
 public class AlertDialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
